@@ -1,0 +1,171 @@
+#+title:       Org mode for Emacs
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
+#+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg+xml">
+#+include: "../resources/preamble.html" export html
+
+#+include: "../resources/normal-outline-3.html" export html
+
+#+begin_export html
+<style>
+  .columns .outline-3 {
+    width: 15rem;
+  }
+</style>
+#+end_export
+
+#+begin_export html
+<div class="banner hero" itemscope itemtype="http://schema.org/SoftwareApplication">
+  <img src="/resources/img/org-mode-unicorn.svg"
+       alt="Org unicorn logo" itemprop="image"/>
+  <div>
+    <h2>
+      <span itemprop="name">Org Mode</span>
+      <p class="subtitle">お手軽 <span itemprop="applicationCategory">プレーンテキスト マークアップ</span> 、それだけじゃない</p>
+    </h2>
+    <p>
+      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>向けのオープンソースで拡張可能なメジャーモード</p>
+    <p>Org mode is for keeping notes, maintaining to-do lists, planning
+      projects, authoring documents, computational notebooks, literate
+      programming, and more &mdash; in a fast and effective plain text
+      system.</p>
+    <p class="bubble">
+      プロジェクトを応援: &ensp;
+      <a href="https://liberapay.com/bzg" title="Donations always help"
+         style="font-weight: bold;">
+        <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapay logo"/>
+        Liberapay</a>&ensp;
+      <a href="https://github.com/sponsors/bzg" title="Donations always help"
+         style="font-weight: bold;">
+        <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
+        GitHub</a>&emsp14;
+      ,&emsp14;
+      <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
+         style="font-weight: bold;">
+        <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
+        PayPal</a></p>
+    <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
+    <meta itemprop="softwareVersion" content="9.3.8">
+    <meta itemprop="datePublished" content="2020-08-07">
+    <meta itemprop="url" content="https://orgmode.org">
+    <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
+  </div>
+  </div>
+  <div class="banner slim green inline">
+    <p style="width: 90vw">
+      Created by
+      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
+      in <a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>,
+      maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a>
+      and developed by
+      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</p>
+  </div>
+#+end_export
+
+* Highlights
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns no-heading
+:END:
+** Features
+@@html:<a href="features.html">@@
+[[file:resources/img/stars.svg]]
+
+Delve into the possibilities.
+@@html:</a>@@
+** Install
+@@html:<a href="install.html">@@
+[[file:resources/img/install.svg]]
+
+What are you waiting for?
+@@html:</a>@@
+** Quickstart
+@@html:<a href="quickstart.html">@@
+[[file:resources/img/quickstart.svg]]
+
+Start using Org. You'll never stop.
+@@html:</a>@@
+** Contribute
+@@html:<a href="contribute.html">@@
+[[file:resources/img/contribute.svg]]
+
+Yes. Do this.
+@@html:</a>@@
+
+* Elaboration + demo image :ignore:
+Org is a highly flexible structured plain text file format, composed of a few
+simple, yet versatile, structures --- constructed to be both [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the
+novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
+
+#+attr_html: :style max-width:min(45rem, 80vw) :alt An example org file, showing a few basic elements
+[[file:resources/img/main.svg]]
+
+* Further reading
+
+Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]],
+Org has a [[file:guide/index.html][guide]], and a wealth of community-written documentation on [[https://orgmode.org/worg/][Worg]] .
+
+Nearly every Org user has a story to tell about how Org enables and empowers them ---
+some have found it so useful that they have written [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] about
+the value of Org for conducting [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible research]].
+
+* More Org
+
+The /de facto/ mimetype for Org files is =text/org=. Org files use the
+~.org~ extension. Most operating systems don't know to open ~.org~
+files in Emacs, but they can be configured to do so without much
+effort.
+
+While the reference implementation of Org in Emacs lisp is by far the
+most featureful, there are many additional [[file:tools.org][tools]]
+that work with Org.
+#+begin_center
+#+attr_html: :class btn
+[[file:tools.org][Tools which work with Org]]
+#+end_center
+
+* [[https://orgmode.org/worg/][Worg]], a /World/ of Org
+Org and Org-mode have so many use cases that it is simply not possible
+to easily document them, let alone show them all off on a single page.
+As a result, [[https://orgmode.org/worg/][Worg]] serves as a community
+wiki and provides a place to document and share information about all
+aspects of using and working with Org.
+
+For example, Worg contains:
++ [[https://orgmode.org/worg/org-faq.html][The FAQ]]
++ [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
++ [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
++ [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
++ ...and much more
+
+Worg is maintained as a Git repository of Org files that are published
+as an HTML website.  New contributors are welcome. If you would like to
+contribute please create a user on [[https://code.orgmode.org][code.orgmode.org]]
+and ask to be added as a collaborator.
+
+#+BEGIN_SRC shell
+~$ git clone https://code.orgmode.org/bzg/worg.git
+#+END_SRC
+
+* Org in the wild
+** Chatting about Org
+You can connect with other org-thusiasts via IRC at ~#orgmode~ on [[https://freenode.net/][freenode]].
+
+Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]]
+via the GNU listserv, and can browse the [[https://orgmode.org/list][primary archive]]
+here at =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
+** Writing about Org
++ [[https://www.viktorbengtsson.com/blog/org-mode-for-writers/][Org-mode for writers]]
++ [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][How To Take Smart Notes With Org-mode · Jethro Kuan]]
++ [[https://opensource.com/article/20/4/emacs-org-mode][Use Emacs Org mode to easily create LaTeX documents | Opensource.com]]
++ [[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Org as a Word Processor]]
++ [[http://www.howardism.org/Technical/Emacs/literate-devops.html][Literate DevOps]]
+** Talking about Org
++ [[https://www.youtube.com/watch?v=oJTwQvgfgMM][Google Tech Talk]] (2008) :: Delivered by Carsten Dominick.
++ Max Planck Institute for Neurological Research (2010) :: Recording lost to the
+  sands of time.
++ [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010) :: Interview of Carsten Dominic.
++ [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html][GHM Paris]] (2011) :: Org Demo by Bastien Guerry.
++ [[https://www.youtube.com/watch?v=wiMSzI6VHhM][GPN12]] (2012) :: Florain Adamsky's in-depth presentation ([[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][slides]]).
++ [[https://www.youtube.com/watch?v=SzA2YODtgK4][Thoughtbot]] (2016) :: Getting started with Org Mode by Harry Schwartz.
++ [[https://www.youtube.com/watch?v=0g9BcZvQbXU][YouTube]] (2019) :: Consistent Technical Documents Using Emacs and Org Mode, by Mike Hamrick.
